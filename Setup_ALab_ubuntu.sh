@@ -14,6 +14,7 @@ sudo apt-get install libx11-dev
 sudo apt-get install libxpm-dev
 sudo apt-get install libxft-dev
 sudo apt-get install -y libxext-dev
+sudo snap install htop
 
 #mount HDD, only need to run these when you have new hardwares
 sudo apt install gparted    #install UI surface for disk management
