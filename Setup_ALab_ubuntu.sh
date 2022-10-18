@@ -15,6 +15,8 @@ sudo apt-get install libxpm-dev
 sudo apt-get install libxft-dev
 sudo apt-get install -y libxext-dev
 sudo snap install htop
+sudo apt install screen
+sudo apt  install cmake-curses-gui
 
 #mount HDD, only need to run these when you have new hardwares
 sudo apt install gparted    #install UI surface for disk management
