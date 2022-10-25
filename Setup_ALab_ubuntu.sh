@@ -64,7 +64,7 @@ sudo make install
 echo 'export Geant4sh=/opt/root/geant4-11.0.3-install/bin/geant4.sh' >>~/.bash_profile
 source ~/.bash_profile
 
-#install SimpleDet
+#install SimpleDet, seems need root 62600.
 cd /opt
 sudo mkdir boost
 cd boost
