@@ -1,6 +1,7 @@
-First please use terminal to ssh to your new account. Change below command tsuguoaramaki to your own account.(default password aramakilab)
+First please use terminal to ssh to your new account. Change below command <span style="color:red">some *blue* text</span>.
+ to your own account.(default password aramakilab)
 ```
-$ ssh -p 1412 tsuguoaramaki@129.10.133.195
+$ ssh -p 1412 accountname@129.10.133.195
 ```
 
 setup your vnc password by typing:
@@ -10,7 +11,7 @@ $ vncpasswd
 
 set up start up file by using command:
 ```
-$ nano ~/.vnc/xstartup
+$ vim ~/.vnc/xstartup
 ```
 
 after open xstartup, please copy and paste below things into the file
