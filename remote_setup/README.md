@@ -26,6 +26,7 @@ after open xstartup, please copy and paste below things into the file
 vncconfig -iconic &
 dbus-launch --exit-with-session gnome-session
 ```
+<img width="641" alt="Screen Shot 2022-10-26 at 3 55 42 PM" src="https://user-images.githubusercontent.com/37788723/198124286-7bcbd665-6dfd-4954-ad5b-a2a128041d43.png">
 
 hit ctrl+x to exit
 
