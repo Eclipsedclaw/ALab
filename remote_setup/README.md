@@ -1,3 +1,5 @@
+##This procedure is needed only for setup your vnc for the first time!
+
 First please use terminal to ssh to your new account. Change below command **accountname** to your own account.(default password **aramakilab**, recommand change to your own after the end of this procedure)
 ```
 $ ssh -p 1412 accountname@129.10.133.195
