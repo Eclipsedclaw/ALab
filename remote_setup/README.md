@@ -1,7 +1,9 @@
-First please use terminal to ssh to your new account. Change below command ** accountname ** to your own account.(default password aramakilab)
+First please use terminal to ssh to your new account. Change below command **accountname** to your own account.(default password **aramakilab**)
 ```
 $ ssh -p 1412 accountname@129.10.133.195
 ```
+<img width="737" alt="Screen Shot 2022-10-26 at 3 52 19 PM" src="https://user-images.githubusercontent.com/37788723/198123208-bd32b143-01fd-42dd-aa91-bd86fc755722.png">
+
 
 setup your vnc password by typing:
 ```
