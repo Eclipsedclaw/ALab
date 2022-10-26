@@ -1,7 +1,4 @@
-
-First please use terminal to ssh to your new account
-
-change below command tsuguoaramaki to your own account
+First please use terminal to ssh to your new account. Change below command tsuguoaramaki to your own account.(default password aramakilab)
 ```
 $ ssh -p 1412 tsuguoaramaki@129.10.133.195
 ```
