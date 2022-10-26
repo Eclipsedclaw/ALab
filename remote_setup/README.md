@@ -71,3 +71,12 @@ Depending on whether you want to input vnc password each time or not you could s
 And then you should be able to login to the linux server using the default password! Have fun!
 <img width="1249" alt="Screen Shot 2022-10-26 at 4 08 36 PM" src="https://user-images.githubusercontent.com/37788723/198126600-08fea0da-05e3-48e9-98a7-4d825051f2e7.png">
 
+## Second time login
+When you already went through steps above, you only need to do two steps to connect to UI interface:
+change **accountname** to your own account and use **your own portnumber** in the below command:
+```
+$ ssh -p 1412 accountname@129.10.133.195 -L 5905:127.0.0.1:5905
+```
+<img width="985" alt="Screen Shot 2022-10-26 at 4 01 48 PM" src="https://user-images.githubusercontent.com/37788723/198125331-d30ea393-cb12-4cc7-84c1-4f66223c6524.png">
+
+Then go to your vnc viewer, double click the connection that you already set
