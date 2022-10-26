@@ -1,5 +1,5 @@
 ## This procedure is needed only for setup your vnc for the first time!
-#please do not reboot/turn off the ubuntu server without telling everyone in the lab!
+# please do not reboot/turn off the ubuntu server without telling everyone in the lab!
 
 First please use terminal to ssh to your new account. Change below command **accountname** to your own account.(default password **aramakilab**, recommand change to your own after the end of this procedure)
 ```
