@@ -1,5 +1,4 @@
-First please use terminal to ssh to your new account. Change below command <span style="color:red">some *blue* text</span>.
- to your own account.(default password aramakilab)
+First please use terminal to ssh to your new account. Change below command ** accountname ** to your own account.(default password aramakilab)
 ```
 $ ssh -p 1412 accountname@129.10.133.195
 ```
