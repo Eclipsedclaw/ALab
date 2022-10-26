@@ -32,7 +32,7 @@ sudo mount /dev/sda1 /HDD   #mount hard disk to certain directory
 sudo ln -s /HDD ~/
 
 #setup ssh
-sudo iptables -t nat -A PREROUTING -p tcp -d 192.168.1.242 --dport 1412 -j DNAT --to-destination 192.168.1.242:1412       #port forwarding
+#check router port forwarding and modify /etc/ssh/sshd_config to a certain port
 
 #install root
 cd /opt
