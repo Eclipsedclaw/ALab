@@ -7,14 +7,14 @@ $ vncpasswd   #setup your vnc password
 
 $ vim ~/.vnc/xstartup   #after open this file, please copy and paste below things into the file
 
-'''
+,,,
 #!/bin/sh
 # Start Gnome 3 Desktop 
 [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
 [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
 vncconfig -iconic &
 dbus-launch --exit-with-session gnome-session
-'''
+,,,
 
 $ chmod +x ~/.vnc/xstartup    #change ownership of the startup setup
 
