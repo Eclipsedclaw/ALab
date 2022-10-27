@@ -21,6 +21,9 @@ sudo apt install neovim
 sudo apt install libxerces-c-dev
 sudo sudo apt install qtbase5-dev
 sudo apt install libxmu-dev
+sudo apt install jupyter-core   #install jupyter-lab
+sudo apt install python3-pip
+sudo pip install jupyterlab
 
 #mount HDD, only need to run these when you have new hardwares
 sudo apt install gparted    #install UI surface for disk management
