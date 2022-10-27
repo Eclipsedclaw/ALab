@@ -34,6 +34,20 @@ sudo ln -s /HDD ~/
 #setup ssh
 #check router port forwarding and modify /etc/ssh/sshd_config to a certain port
 
+#set up tigerVNC:https://www.cyberciti.biz/faq/install-and-configure-tigervnc-server-on-ubuntu-18-04/
+sudo apt install tigervnc-standalone-server tigervnc-xorg-extension tigervnc-viewer   #install libraries
+sudo apt install ubuntu-gnome-desktop   #install desktop environment
+sudo systemctl enable gdm
+sudo systemctl start gdm
+vim ~/.vnc/xstartup
+echo '#!/bin/sh' >> ~/.vnc/xstartup
+echo '# Start Gnome 3 Desktop' >> ~/.vnc/xstartup
+echo '[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup' >> ~/.vnc/xstartup
+echo '[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources' >> ~/.vnc/xstartup
+echo 'vncconfig -iconic &' >> ~/.vnc/xstartup
+echo 'dbus-launch --exit-with-session gnome-session' >> ~/.vnc/xstartup
+#For detailed tigerVNC setup please check this repository under remote_setup: https://github.com/Eclipsedclaw/ALab/tree/main/remote_setup
+
 #install root
 cd /opt
 sudo mkdir root
