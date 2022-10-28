@@ -93,3 +93,38 @@ cd boost_1_68_0/
 git clone -b develop https://UbuntuServer@uhhepvcs.phys.hawaii.edu/philipvd/SimpleDet.git SimpleDet   #password will be the token you have
 mkdir build
 cd build
+
+#install GramsSim
+#install dependency Xerces-C
+cd /opt
+sudo mkdir Xerces-C
+cd Xerces-C
+sudo git clone https://gitbox.apache.org/repos/asf/xerces-c.git
+sudo mkdir build
+sudo mkdir xerces-c-install
+cd build
+sudo cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=/opt/Xerces-C/xerces-c-install -DCMAKE_BUILD_TYPE=Debug -Dmessage-loader=icu ../xerces-c/
+sudo make -j11
+sudo make test
+sudo make install
+#install dependency HepMC3
+cd /opt
+sudo mkdir HepMC3
+cd HepMC3/
+sudo git clone https://gitlab.cern.ch/hepmc/HepMC3.git
+sudo mkdir hepmc3-build
+cd hepmc3-build
+sudo cmake -DHEPMC3_ENABLE_ROOTIO=OFF -DCMAKE_INSTALL_PREFIX=../hepmc3-install ../HepMC3
+sudo make -j11
+sudo make install
+#install dependecy CFITSIO
+cd /opt
+sudo mkdir CFITSIO
+cd CFITSIO/
+sudo wget http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.1.0.tar.gz
+sudo tar -xvzf cfitsio-4.1.0.tar.gz 
+sudo mkdir build
+cd build/
+sudo cmake ../cfitsio-4.1.0/
+sudo make -j11
+sudo make install
