@@ -117,7 +117,7 @@ cd hepmc3-build
 sudo cmake -DHEPMC3_ENABLE_ROOTIO=OFF -DCMAKE_INSTALL_PREFIX=../hepmc3-install ../HepMC3
 sudo make -j11
 sudo make install
-#install dependecy CFITSIO
+#install dependency CFITSIO
 cd /opt
 sudo mkdir CFITSIO
 cd CFITSIO/
@@ -128,3 +128,10 @@ cd build/
 sudo cmake ../cfitsio-4.1.0/
 sudo make -j11
 sudo make install
+#install dependency HEALPix
+cd /opt
+sudo mkdir HEALPix
+cd HEALPix
+sudo wget https://cfhcable.dl.sourceforge.net/project/healpix/Healpix_3.82/Healpix_3.82_2022Jul28.tar.gz
+sudo tar -xvzf Healpix_3.82_2022Jul28.tar.gz 
+sudo ./configure --auto=cxx   #not sure if this is proper
