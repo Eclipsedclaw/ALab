@@ -24,6 +24,7 @@ sudo apt install libxmu-dev
 sudo apt install jupyter-core   #install jupyter-lab
 sudo apt install python3-pip
 sudo pip install jupyterlab
+sudo apt-get install libprotobuf-dev protobuf-compiler
 
 #mount HDD, only need to run these when you have new hardwares
 sudo apt install gparted    #install UI surface for disk management
