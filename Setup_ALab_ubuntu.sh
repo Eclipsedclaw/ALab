@@ -83,6 +83,13 @@ sudo make install
 echo 'export Geant4sh=/opt/root/geant4-11.0.3-install/bin/geant4.sh' >>~/.bash_profile
 source ~/.bash_profile
 
+#install HepRApp for geant4 visulization
+cd /opt
+sudo mkdir HepRApp
+cd HepRApp
+sudo wget http://www.slac.stanford.edu/~perl/HepRApp/HepRApp.jar
+echo 'alias HepRApp="java -jar /opt/HepRApp/HepRApp.jar"' >> ~/.bashrc
+
 #install SimpleDet, seems need root 62600.
 cd /opt
 sudo mkdir boost
