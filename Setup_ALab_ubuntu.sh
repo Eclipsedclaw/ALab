@@ -89,6 +89,7 @@ sudo mkdir HepRApp
 cd HepRApp
 sudo wget http://www.slac.stanford.edu/~perl/HepRApp/HepRApp.jar
 echo 'alias HepRApp="java -jar /opt/HepRApp/HepRApp.jar"' >> ~/.bashrc
+source ~/.bashrc
 
 #install SimpleDet, seems need root 62600.
 cd /opt
