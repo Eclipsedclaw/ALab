@@ -26,6 +26,7 @@ sudo apt install python3-pip
 sudo pip install jupyterlab
 sudo apt-get install libprotobuf-dev protobuf-compiler
 sudo apt install openjdk-8-jdk    #install java 8
+sudo apt install libmysqlclient-dev   #install mysql
 
 #mount HDD, only need to run these when you have new hardwares
 sudo apt install gparted    #install UI surface for disk management
