@@ -27,6 +27,9 @@ sudo pip install jupyterlab
 sudo apt-get install libprotobuf-dev protobuf-compiler
 sudo apt install openjdk-8-jdk    #install java 8
 sudo apt install libmysqlclient-dev   #install mysql
+sudo apt-get install -y libsqlite3-dev    #install sqlite
+sudo apt install r-cran-rcpp    #install Rcpp
+sudo apt-get install -y r-cran-rinside    #install RInside
 
 #mount HDD, only need to run these when you have new hardwares
 sudo apt install gparted    #install UI surface for disk management
